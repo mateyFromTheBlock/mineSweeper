@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/green1"
+    tools:context="com.example.arono.minesweeper.LevelScreen">
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnEasy"
+        android:background="@drawable/btneasy"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnMedium"
+        android:background="@drawable/btnmedium"
+        android:layout_below="@+id/btnEasy"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnHard"
+        android:layout_below="@+id/btnMedium"
+        android:background="@drawable/btnhard"
+        android:layout_alignStart="@+id/btnMedium" />
+
+
+</RelativeLayout>

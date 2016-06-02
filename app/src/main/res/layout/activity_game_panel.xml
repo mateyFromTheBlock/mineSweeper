@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gray"
+    android:id="@+id/rl"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvFlagCounter"
+        android:layout_marginTop="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#049700"
+        android:textSize="20pt"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/lVertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="150dp">
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/ivSmile"
+        android:layout_alignBottom="@+id/tvFlagCounter"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:id="@+id/tvTimer"
+        android:layout_alignBottom="@+id/ivSmile"
+        android:text="000"
+        android:textColor="#049700"
+        android:textSize="20pt"
+        android:textStyle="bold"
+        android:gravity="right"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Danger,Align your device."
+        android:id="@+id/tvDanger"
+        android:textColor="#ff0000"
+        android:layout_marginBottom="33dp"
+        android:layout_above="@+id/ivSmile"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
